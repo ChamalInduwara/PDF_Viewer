@@ -1,0 +1,352 @@
+QMainWindow {
+    background: #F1EDEC;
+}
+
+QDialog {
+    background: #F1EDEC;
+}
+
+QToolBar {
+    border-radius: 8px;
+    background: #F6F0F0;
+    font-weight: bold;
+    spacing: 15px;
+    padding: 5px, 0, 5px, 0
+}
+
+QToolBar::item {
+    spacing: 20px;
+}
+
+QToolBar::separator:horizontal {
+    image: url('assets/images/Hsepartoolbar.png');
+    padding: 4px;
+}
+
+QToolButton {
+    background: #F6F0F0;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+QToolButton::checked {
+    background: #3574F0;
+}
+
+QToolButton::hover {
+    background: #E1DDDC;
+}
+
+QLabel {
+    color: #242424;
+    font-family: 'segoe ui';
+    font-size: 12px;
+}
+
+QScrollArea {
+    background: #F1EDEC;
+    border: 0px;
+}
+
+QAbstractSpinBox {
+    background-color: rgba(225, 221, 220, 240);
+    color: #242424;
+    border-radius: 5px;
+    min-width: 30px;
+    min-height: 10px;
+    padding: 4.5px;
+}
+
+QAbstractSpinBox:up-button {
+    background-color: transparent;
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+}
+
+QAbstractSpinBox:down-button {
+    background-color: transparent;
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+}
+
+QAbstractSpinBox::up-arrow,QAbstractSpinBox::up-arrow:disabled,QAbstractSpinBox::up-arrow:off {
+    image: url('assets/images/up_arrow_disabled.png');
+    width: 8px;
+    height: 8px;
+}
+QAbstractSpinBox::up-arrow:hover {
+    image: url('assets/images/up_arrow.png');
+}
+
+QAbstractSpinBox::down-arrow,QAbstractSpinBox::down-arrow:disabled,QAbstractSpinBox::down-arrow:off {
+    image: url('assets/images/down_arrow_disabled.png');
+    width: 8px;
+    height: 8px;
+}
+
+QAbstractSpinBox::down-arrow:hover {
+    image: url('assets/images/down_arrow.png');
+}
+
+QPushButton {
+    background: rgba(225, 221, 220, 240);
+    font-size: 12px;
+    font-family: 'segoe ui';
+    padding: 5px;
+    color: #242424;
+    border-radius: 5px;
+}
+
+QPushButton::hover {
+    background: #3060B0;
+}
+
+QPushButton::pressed {
+    background: #3574F0;
+}
+
+QPushButton::checked {
+    background: #3574F0;
+}
+
+QListWidget {
+    color: #242424;
+    font-size: 13px;
+    background: rgba(255, 255, 255, 70);
+    border: 0px;
+    padding: 10px;
+    spacing: 15px;
+    text-align: center;
+}
+
+QListWidget::item{
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    spacing: 10px;
+}
+
+
+QListWidget::item::selected{
+    background: #E1DDDC;
+    outline: 0px;
+}
+
+QListWidget::item::hover{
+    background: #E1DbDa;
+}
+
+QRadioButton, QCheckBox {
+    color: #242424;
+    font-size: 13px;
+}
+
+QProgressBar {
+    border-radius: 5px;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 6px;
+    min-height: 6px;
+    text-align: center;
+    background: #F6F0F0;
+    color: black;
+
+}
+
+QProgressBar::chunk {
+    background: #3574F0;
+    width: 3px;
+    margin: 1px;
+    border-radius: 3px;
+}
+
+#preview_lay {
+    background: #F1EDEC;
+    max-width: 140px;
+    min-width: 140px;
+    border-radius: 5px;
+}
+
+#loading_pages {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid #F6F0F0;
+    border-radius: 8px;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+#title {
+    font-family: 'segoe ui';
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+#pageNum {
+    max-width: 90px;
+    min-width: 90px;
+    padding: 0px, 5px, 0px, 5px;
+    background: #F6F0F0;
+    font-family: 'segoe ui';
+    font-size: 12px;
+}
+
+#title_1 {
+    font-family: 'segoe ui';
+    font-size: 30px;
+    color: black;
+}
+
+#topic {
+    font-family: 'segoe ui';
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+#obj_1 {
+    background: #E1DDDC;
+    border-radius: 8px;
+}
+
+#go_to {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid #F6F0F0;
+    border-radius: 8px;
+    min-width: 160px;
+    max-width: 160px;
+    min-height: 39px;
+    max-height: 39px;
+}
+
+#draw_panel {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid #F6F0F0;
+    border-radius: 8px;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 45px;
+    max-height: 45px;
+}
+
+#draw_btn {
+    background: transparent;
+    max-height: 30;
+    min-height: 30;
+    max-width: 30;
+    min-width: 30;
+    padding: 0px;
+
+}
+
+#draw_btn::hover {
+    background: rgba(255, 255, 255, 150);
+}
+
+#draw_btn::checked {
+    background: #3574F0;
+}
+
+#toggle_pane {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid #F6F0F0;
+    border-radius: 8px;
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#menu_panel {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid rgba(246, 240, 240, 240);
+    border-radius: 8px;
+}
+
+#info {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid rgba(246, 240, 240, 240);
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 280px;
+    max-height: 280px;
+}
+
+#recent {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid rgba(246, 240, 240, 240);
+    border-radius: 8px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 290px;
+    max-height: 290px;
+}
+
+#action_btn {
+    background: transparent;
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#action_btn::hover {
+    background: #E1DDDC;
+}
+
+#action_btn::checked {
+    background: #3574F0;
+}
+
+#view_panel {
+    background: rgba(255, 255, 255, 240);
+    border: 2px solid rgba(246, 240, 240, 240);
+    border-radius: 8px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 45px;
+    max-height: 45px;
+}
+
+#preview {
+    border-radius: 5px;
+    padding: 2px;
+}
+
+#preview::hover {
+    background: #3060B0;
+}
+
+#wlc {
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    max-width: 500px;
+    min-width: 500px;
+}
+
+#setBtn{
+    max-width: 25px;
+    min-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+}
+
+#topic_lbl{
+    font-family: 'segoe ui';
+    font-size: 23px;
+    color: black;
+    font-weight: bold;
+    max-width: 140px;
+    min-width: 140px;
+}
+
+#widget {
+    max-width: 160px;
+    min-width: 160px;
+}
